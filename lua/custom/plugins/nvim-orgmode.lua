@@ -7,6 +7,7 @@ return {
   config = function()
     -- Load treesitter grammar for org
     require('orgmode').setup_ts_grammar()
+
     -- Setup treesitter
     require('nvim-treesitter.configs').setup({
       highlight = {
@@ -17,8 +18,8 @@ return {
 
     -- Setup orgmode
     require('orgmode').setup({
-      org_agenda_files = '~/Documents/Notes/Organize/',
-      org_default_notes_file = '~/orgfiles/refile.org',
+      org_agenda_files = '~/Documents/Notes/',
+      org_default_notes_file = '~/Documents/Notes/',
     })
   end,
 }

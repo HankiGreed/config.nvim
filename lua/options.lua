@@ -1,13 +1,7 @@
 -- [[ Setting options ]]
-<<<<<<< HEAD
 
 -- Set highlight on search
 vim.o.hlsearch = false
-=======
--- See `:help vim.opt`
--- NOTE: You can change these options as you wish!
---  For more options, you can see `:help option-list`
->>>>>>> upstream/master
 
 -- Make line numbers default
 vim.opt.number = true
@@ -22,13 +16,10 @@ vim.opt.mouse = 'a'
 vim.opt.showmode = false
 
 -- Sync clipboard between OS and Neovim.
-<<<<<<< HEAD
 vim.o.clipboard = 'unnamedplus'
-=======
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
 vim.opt.clipboard = 'unnamedplus'
->>>>>>> upstream/master
 
 -- Enable break indent
 vim.opt.breakindent = true
