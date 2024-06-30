@@ -99,6 +99,11 @@ return {
         rust_analyzer = {},
         rnix = {},
         marksman = {},
+        beancount = {
+          init_options = {
+            journal_file = "~/beancount.txt",
+          },
+        },
         hls = {
           filetypes = { 'haskell', 'lhaskell', 'cabal' },
         },
@@ -112,6 +117,7 @@ return {
             },
           },
         },
+        metals = {},
       }
       for server_name, config in pairs(servers) do
         config.capabilities = vim.tbl_deep_extend('force', {}, capabilities, config.capabilities or {})
